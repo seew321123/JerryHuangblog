@@ -1,0 +1,25 @@
+{
+  "name": "papp-doc",
+  "version": "1.0.0",
+  "description": "这是担路网网页编辑器应用中心相关文档",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phyng/papp-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phyng/papp-doc/issues"
+  },
+  "homepage": "https://github.com/phyng/papp-doc#readme",
+  "dependencies": {
+    "gitbook-plugin-todo": "^0.1.3"
+  }
+}
