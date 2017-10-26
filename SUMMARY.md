@@ -18,3 +18,5 @@
 * 技术文档
   - [应用更新流程](docs/core/update.md)
   - [应用隔离](docs/core/dep.md)
+* 示例代码
+  - [动态组件切换](docs/example/component.md)
