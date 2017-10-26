@@ -7,6 +7,7 @@ cp -R _book/* .
 git add .
 git commit -a -m 'chore(build): build'
 git push origin gh-pages
+git push demlution gh-pages
 
 git checkout master
 git status
