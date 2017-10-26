@@ -2,6 +2,10 @@
 
 gitbook install && gitbook build
 
+git checkout master
+git push origin master
+git push demlution master
+
 git checkout gh-pages
 cp -R _book/* .
 git add .
