@@ -1,6 +1,7 @@
 # Summary
 
 * [首页](README.md)
+* [更新日志](CHANGELOG.md)
 * 数据库
   - [应用数据库管理](docs/dataset/field.md)
   - [数据库查询语句](docs/dataset/dql.md)
@@ -10,6 +11,8 @@
   - [多平台支持](docs/fe/platform.md)
   - [用户相关功能](docs/fe/user.md)
   - [路由](docs/fe/router.md)
+  - [应用依赖管理](docs/fe/deps.md)
+  - [第三方框架支持](docs/fe/framework.md)
 * 后端代码
   - [云函数编辑](docs/be/ccode.md)
   - [支付接口](docs/be/payment.md)
