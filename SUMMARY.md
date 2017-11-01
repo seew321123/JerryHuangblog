@@ -16,6 +16,7 @@
   - [应用依赖管理](docs/fe/deps.md)
   - [第三方框架支持](docs/fe/framework.md)
   - [设置界面高级布局](docs/fe/settings-layout.md)
+  - [事件管理器](docs/fe/event.md)
 * 后端代码
   - [云函数编辑](docs/be/ccode.md)
   - [支付接口](docs/be/payment.md)
