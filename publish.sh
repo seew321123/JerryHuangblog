@@ -6,6 +6,7 @@ git checkout master
 git push origin master
 git push demlution master
 
+gitbook build
 git checkout gh-pages
 cp -R _book/* .
 git add .
