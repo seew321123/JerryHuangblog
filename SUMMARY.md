@@ -2,8 +2,10 @@
 
 * [首页](README.md)
 * [更新日志](CHANGELOG.md)
-* 问题总结
-  - [2017-10-28](docs/issues/2017-10-28.md)
+* 工单日志
+  - [2017-11-14 vee-validate 组件重构](docs/issues/2017-11-14.md)
+  - [2017-11-07 应用进展](docs/issues/2017-11-07.md)
+  - [2017-10-28 常见问题汇总](docs/issues/2017-10-28.md)
 * 数据库
   - [应用数据库管理](docs/dataset/field.md)
   - [数据库查询语句](docs/dataset/dql.md)

@@ -24,4 +24,4 @@ import ListView from './my_list.js'
 import DetailView from './my_detail.js'
 ```
 
-参考 http://www.demlution.com/store/admin/page.html#/build/papp/6769
+参考 http://www.demlution.com/store/admin/page.html#/build/papp/7705
