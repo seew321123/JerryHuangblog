@@ -22,6 +22,7 @@
 * 后端代码
   - [云函数编辑](docs/be/ccode.md)
   - [支付接口](docs/be/payment.md)
+  - [计划任务支持](docs/be/rqueue_schedule.md)
 * 流程
   - [应用发布流程](docs/workflow/publish.md)
 * 技术文档
