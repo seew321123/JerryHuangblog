@@ -18,10 +18,10 @@ import app
 
 @app.register_task(times=[datetime.time(1, 0)])
 def hello(context):
-    print('Hello, world!!!!')
-    print(list(context.get_all_datasets()))
-    print(list(context.get_all_tables()))
-    print(list(context.get_all_rows()))
+    context.log('Hello, world!!!!')
+    context.log(list(context.get_all_datasets()))
+    context.log(list(context.get_all_tables()))
+    context.log(list(context.get_all_rows()))
     return {}
 ```
 
