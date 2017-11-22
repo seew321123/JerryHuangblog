@@ -20,6 +20,9 @@
   - [支付接口](docs/be/payment.md)
   - [计划任务支持](docs/be/rqueue_schedule.md)
   - [云函数日志支持](docs/be/log.md)
+* 小程序
+  - [小程序应用开发概览](docs/dwapp/papp.md)
+  - [小程序模块开发文档](docs/dwapp/slide.md)
 * 流程
   - [应用发布流程](docs/workflow/publish.md)
 * 技术文档
