@@ -24,6 +24,7 @@
   - [小程序应用开发概览](docs/dwapp/papp.md)
   - [wjs 语法文档](docs/dwapp/wjs.md)
   - [wxml 语法文档](docs/dwapp/wxml.md)
+  - [wxml 组件文档](docs/dwapp/component.md)
   - [小程序模块开发文档](docs/dwapp/slide.md)
 * 流程
   - [应用发布流程](docs/workflow/publish.md)

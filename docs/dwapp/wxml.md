@@ -131,21 +131,3 @@ export default {
 </wx-for>
 ```
 
-## 图片组件
-
-```html
-<wx-image :src="gift.img_url" class="weui_media_appmsg_thumb" mode="widthFix"></wx-image>
-```
-
-## 表单组件
-
-### wx-input 文本框
-
-```html
-<wx-input class="b-input" type="text" focus="true" :value="slide.dwdata.name" placeholder="饭局主题" @update:value="updateInput" dw-event="bind:input:updateInput"></wx-input>
-```
-
-### wx-pick 选择
-
-参考 http://www.demlution.com/store/admin/page.html#/build/papp/8232
-
