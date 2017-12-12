@@ -166,6 +166,8 @@ path 由三部分组成：method + resource_name + action_name
 | dw.request('dynamic_get/company/action', query) | Api.company.action(query)     | 自定义 action 操作数据        |
 | dw.request('dynamic_post/company/action', query) | Api.company.action(query)     | 自定义 action 操作数据        |
 
+为什么看起来比商家中心版本复杂了很多？因为小程序版本的请求不再依赖于 API Schema
+
 ## 登录相关的问题处理
 
 如果一个页面需要登录才能使用，特别是个人中心组件，在 onShow 方法内做如下处理
