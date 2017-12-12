@@ -11,11 +11,17 @@
 
 ### wx-scroll-view 可滚动视图区域
 
+示例 http://www.demlution.com/store/admin/page.html#/build/papp/8321
+
 ```html
 <wx-scroll-view class="b-items" scroll-y="true"></wx-scroll-view>
 ```
 
 ### wx-swiper 滑块视图容器
+
+静态示例 http://www.demlution.com/store/admin/page.html#/build/papp/8322
+
+动态示例 http://www.demlution.com/store/admin/page.html#/build/dwapp/8323
 
 ```html
 <wx-swiper class="b-items" :settings="slide.dwdata.settings">
@@ -160,3 +166,4 @@ export default {
 
 </wx-view>
 ```
+
