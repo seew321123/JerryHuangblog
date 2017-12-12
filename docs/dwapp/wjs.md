@@ -51,7 +51,7 @@ API
 | alert(title, content, callback) | function |         | 显示一个简单的弹出框                               |
 | goToHref(dwHref)                | function |         | 跳转到其他页面，例如：dw.goToHref('list-product')   |
 | goToPage(name, params = {})     | function |         | 跳转到当前应用的某个子页面，例如：dw.goToPage('detail', {id: item.id}) |
-| request(path, data):Promise     | function | Promise | 发起 API 请求                                |
+| request(path, data)             | function | Promise | 发起 API 请求                                |
 | setExtraQuery(obj)              | function |         | [转发]设置转发时携带额外的查询参数                       |
 | setShareTitle(title)            | function |         | [转发]设置转发时标题，会覆盖默认标题                      |
 | setShareImageUrl(imageUrl)      | function |         | [转发]设置转发时图片，会覆盖默认截图                      |
@@ -72,4 +72,121 @@ API
 | isUserLogin | function |                 | Promise | 判断用户是否登录              |
 | wxGotoLogin | function | query           |         | [微信]跳转到登录页面，支持设置参数    |
 | wxLogin     | function |                 | Boolean | [微信]判断用户是否登录，没有登录自动跳转 |
+
+## 细节 
+
+### `dw.setData(key, value)` 支持修改嵌套对象
+
+```javascript
+export default {
+  data: {
+    key1: 1,
+    obj: {
+      key2: 3
+    }
+  },
+  onShow () {
+    dw.setData('key1', 2)
+    dw.setData('obj.key2', 4)
+  }
+}
+
+// 输出结果: { "key1": 2, "obj": { "key2": 4 } }
+```
+
+### `dw.setDatas(obj)` 支持批量更新数据
+
+功能与 `dw.setData(key, value)` 一致，不过可以支持多组数据，如果要修改多条数据，强烈建议使用此 API，性能更好。
+
+```javascript
+export default {
+  data: {
+    key1: 1,
+    obj: {
+      key2: 3
+    }
+  },
+  onShow () {
+    dw.setDatas({
+      key1: 2,
+      'obj.key2': 4
+    })
+  }
+}
+
+// 输出结果: { "key1": 2, "obj": { "key2": 4 } }
+```
+
+
+###  弹出窗口
+
+`dw.alert(title, content, callback)` 在 web 端渲染为 SweetAlert，在小程序内渲染为 `wx.showModal()`，可以用于简单的弹出一个弹出框
+
+### 分享相关 API
+
+| 对象属性                         | 类型       | 返回值  | 说明                             |
+| ---------------------------- | -------- | ---- | ------------------------------ |
+| setExtraQuery(obj)           | function |      | [转发]设置转发时携带额外的查询参数             |
+| setShareTitle(title)         | function |      | [转发]设置转发时标题，会覆盖默认标题            |
+| setShareImageUrl(imageUrl)   | function |      | [转发]设置转发时图片，会覆盖默认截图            |
+| addShareCallback(type, func) | function |      | [转发]设置转发时回调函数(success, fail)   |
+| setOveride(key, value)       | function |      | [转发]重载内置方法如  onShareAppMessage |
+
+
+### 页面跳转如何处理
+
+- 跳转到其他页面，使用 dw.goToHref('list-product')
+- 跳转到应用的子页面，使用 dw.goToPage('detail', {id: item.id})
+
+### 网络请求
+
+- dw.request(path, data) 支持模拟登录
+- dw.request(path, data) 支持多种语法，具体如下表
+
+
+
+
+path 由三部分组成：method + resource_name + action_name
+
+- **method**: get/post/put/delete/dynamic_get/dynamic_post
+- **resource_name**: TastypieApi resource_name
+- **action_name**: 可以是默认的 query/get/put/delete 也可以是自定义的 action_name
+
+
+
+| 请求路径                                     | 对应的商家中心语法                     | 语义                     |
+| ---------------------------------------- | ----------------------------- | ---------------------- |
+| dw.request('get/company/query', query)   | Api.company.query(query)      | 获取资源数据列表               |
+| dw.request('post/company/', data)        | Api.company.save(data)        | 创建单个资源数据               |
+| dw.request('get/company/get', {id: 500}) | Api.company.get({id: 500})    | 读取单个资源数据               |
+| dw.request('put/company/put', {id: 500}) | Api.company.update({id: 500}) | 更新单个资源数据               |
+| dw.request('delete/company/delete', {id: 500}) | Api.company.delete({id: 500}) | 删除单个资源数据               |
+| dw.request('get/company/action', query)  | Api.company.action(query)     | 自定义 static action 操作数据 |
+| dw.request('post/company/action', query) | Api.company.action(query)     | 自定义 static action 操作数据 |
+| dw.request('dynamic_get/company/action', query) | Api.company.action(query)     | 自定义 action 操作数据        |
+| dw.request('dynamic_post/company/action', query) | Api.company.action(query)     | 自定义 action 操作数据        |
+
+## 登录相关的问题处理
+
+如果一个页面需要登录才能使用，特别是个人中心组件，在 onShow 方法内做如下处理
+
+```javascript
+async onShow () {
+  if (dw.app.wxLogin()) {
+    //
+  }
+}
+```
+
+上述代码会自动处理：已登录可见；未登录跳转到登录，用户登录后跳转回此页面
+
+如何获取用户信息
+
+```javascript
+if (dw.app.wxLogin()) {
+  const response = await dw.request('get/company_account/get_siteuser_data')
+  dw.setData('load', true)
+  dw.setData('siteuser', response.data.profile)
+}
+```
 
