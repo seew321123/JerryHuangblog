@@ -57,6 +57,7 @@ API
 | setShareImageUrl(imageUrl)      | function |         | [转发]设置转发时图片，会覆盖默认截图                      |
 | addShareCallback(type, func)    | function |         | [转发]设置转发时回调函数(success, fail)             |
 | setOveride(key, value)          | function |         | [转发]重载内置方法如  onShareAppMessage           |
+| wx                              | object   |         | 微信内置的 wx 对象，只在小程序内部可用                    |
 | app                             | object   |         | AppProxy 对象，详细参考下表                       |
 
 `dw.app` 是一个对象，用来处理应用相关的 API，具体接口如下，其中 wx 开头的接口只能在微信使用
@@ -73,7 +74,7 @@ API
 | wxGotoLogin | function | query           |         | [微信]跳转到登录页面，支持设置参数    |
 | wxLogin     | function |                 | Boolean | [微信]判断用户是否登录，没有登录自动跳转 |
 
-## 细节 
+## 细节
 
 ### `dw.setData(key, value)` 支持修改嵌套对象
 
@@ -159,7 +160,7 @@ path 由三部分组成：method + resource_name + action_name
 | dw.request('get/company/query', query)   | Api.company.query(query)      | 获取资源数据列表               |
 | dw.request('post/company/', data)        | Api.company.save(data)        | 创建单个资源数据               |
 | dw.request('get/company/get', {id: 500}) | Api.company.get({id: 500})    | 读取单个资源数据               |
-| dw.request('put/company/put', {id: 500}) | Api.company.update({id: 500}) | 更新单个资源数据               |
+| dw.request('put/company/update', {id: 500}) | Api.company.update({id: 500}) | 更新单个资源数据               |
 | dw.request('delete/company/delete', {id: 500}) | Api.company.delete({id: 500}) | 删除单个资源数据               |
 | dw.request('get/company/action', query)  | Api.company.action(query)     | 自定义 static action 操作数据 |
 | dw.request('post/company/action', query) | Api.company.action(query)     | 自定义 static action 操作数据 |
@@ -191,4 +192,3 @@ if (dw.app.wxLogin()) {
   dw.setData('siteuser', response.data.profile)
 }
 ```
-

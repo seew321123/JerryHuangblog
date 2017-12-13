@@ -22,6 +22,7 @@
   - [云函数日志支持](docs/be/log.md)
 * 小程序
   - [小程序应用开发概览](docs/dwapp/papp.md)
+  - [小程序应用编辑器功能介绍](docs/dwapp/editor.md)
   - [wjs 语法文档](docs/dwapp/wjs.md)
   - [wxml 语法文档](docs/dwapp/wxml.md)
   - [wxml 组件文档](docs/dwapp/component.md)
