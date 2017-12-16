@@ -36,7 +36,7 @@
 * 示例代码
   - [动态组件切换](docs/example/component.md)
 * 工单日志
-* - [2017-12-16 应用进展](docs/issues/2017-12-16.md)
+  - [2017-12-16 应用进展](docs/issues/2017-12-16.md)
   - [2017-11-14 vee-validate 组件重构](docs/issues/2017-11-14.md)
   - [2017-11-11 个人中心组件在线迁移](docs/issues/2017-11-11.md)
   - [2017-11-07 应用进展](docs/issues/2017-11-07.md)
