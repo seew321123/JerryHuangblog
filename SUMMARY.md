@@ -29,6 +29,7 @@
   - [小程序模块开发文档](docs/dwapp/slide.md)
 * 流程
   - [应用发布流程](docs/workflow/publish.md)
+  - [应用开发标准](docs/workflow/standard.md)
 * 技术文档
   - [应用更新流程](docs/core/update.md)
   - [应用隔离](docs/core/dep.md)

@@ -1,0 +1,844 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>应用依赖管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="framework.html" />
+    
+    
+    <link rel="prev" href="router.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dataset/field.html">
+            
+                <a href="../dataset/field.html">
+            
+                    
+                    应用数据库管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../dataset/dql.html">
+            
+                <a href="../dataset/dql.html">
+            
+                    
+                    数据库查询语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="files.html">
+            
+                <a href="files.html">
+            
+                    
+                    前端文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="app_proxy.html">
+            
+                <a href="app_proxy.html">
+            
+                    
+                    前端代码编辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="platform.html">
+            
+                <a href="platform.html">
+            
+                    
+                    多平台支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    用户相关功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="deps.html">
+            
+                <a href="deps.html">
+            
+                    
+                    应用依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="framework.html">
+            
+                <a href="framework.html">
+            
+                    
+                    第三方框架支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="settings-layout.html">
+            
+                <a href="settings-layout.html">
+            
+                    
+                    设置界面高级布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    后端代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../be/ccode.html">
+            
+                <a href="../be/ccode.html">
+            
+                    
+                    云函数编辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../be/payment.html">
+            
+                <a href="../be/payment.html">
+            
+                    
+                    支付接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../be/rqueue_schedule.html">
+            
+                <a href="../be/rqueue_schedule.html">
+            
+                    
+                    计划任务支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../be/log.html">
+            
+                <a href="../be/log.html">
+            
+                    
+                    云函数日志支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    小程序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../dwapp/papp.html">
+            
+                <a href="../dwapp/papp.html">
+            
+                    
+                    小程序应用开发概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../dwapp/editor.html">
+            
+                <a href="../dwapp/editor.html">
+            
+                    
+                    小程序应用编辑器功能介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../dwapp/wjs.html">
+            
+                <a href="../dwapp/wjs.html">
+            
+                    
+                    wjs 语法文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../dwapp/wxml.html">
+            
+                <a href="../dwapp/wxml.html">
+            
+                    
+                    wxml 语法文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../dwapp/component.html">
+            
+                <a href="../dwapp/component.html">
+            
+                    
+                    wxml 组件文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../dwapp/slide.html">
+            
+                <a href="../dwapp/slide.html">
+            
+                    
+                    小程序模块开发文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    流程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../workflow/publish.html">
+            
+                <a href="../workflow/publish.html">
+            
+                    
+                    应用发布流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../workflow/standard.html">
+            
+                <a href="../workflow/standard.html">
+            
+                    
+                    应用开发标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    技术文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../core/update.html">
+            
+                <a href="../core/update.html">
+            
+                    
+                    应用更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../core/dep.html">
+            
+                <a href="../core/dep.html">
+            
+                    
+                    应用隔离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    示例代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../example/component.html">
+            
+                <a href="../example/component.html">
+            
+                    
+                    动态组件切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    工单日志
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issues/2017-11-14.html">
+            
+                <a href="../issues/2017-11-14.html">
+            
+                    
+                    2017-11-14 vee-validate 组件重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issues/2017-11-11.html">
+            
+                <a href="../issues/2017-11-11.html">
+            
+                    
+                    2017-11-11 个人中心组件在线迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issues/2017-11-07.html">
+            
+                <a href="../issues/2017-11-07.html">
+            
+                    
+                    2017-11-07 应用进展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issues/2017-10-28.html">
+            
+                <a href="../issues/2017-10-28.html">
+            
+                    
+                    2017-10-28 常见问题汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >应用依赖管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E94;&#x7528;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;"><a name="&#x5E94;&#x7528;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;" class="plugin-anchor" href="#&#x5E94;&#x7528;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;</h1>
+<p>&#x7F51;&#x9875;&#x7F16;&#x8F91;&#x5668;&#x76EE;&#x524D;&#x652F;&#x6301;&#x4E0A;&#x5343;&#x4E2A;&#x7EC4;&#x4EF6;&#x548C;&#x6A21;&#x5757;&#x7684;&#x6392;&#x5217;&#x7EC4;&#x5408;&#xFF0C;&#x5FC5;&#x7136;&#x4F1A;&#x9047;&#x5230;&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5E94;&#x7528;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x9700;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;</p>
+<ul>
+<li>&#x9694;&#x79BB;</li>
+<li>&#x6309;&#x9700;&#x52A0;&#x8F7D;</li>
+<li>&#x540C;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#x52A0;&#x8F7D;&#x4E4B;&#x540E;&#x80FD;&#x591F;&#x7F13;&#x5B58;&#x8D77;&#x6765;</li>
+<li>&#x591A;&#x4E2A;&#x5E94;&#x7528;&#x5171;&#x4EAB;&#x76F8;&#x540C;&#x7684;&#x4F9D;&#x8D56;&#x53EA;&#x52A0;&#x8F7D;&#x4E00;&#x6B21;</li>
+</ul>
+<h2 id="&#x4F9D;&#x8D56;&#x7C7B;&#x578B;"><a name="&#x4F9D;&#x8D56;&#x7C7B;&#x578B;" class="plugin-anchor" href="#&#x4F9D;&#x8D56;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F9D;&#x8D56;&#x7C7B;&#x578B;</h2>
+<p>&#x5728;&#x7F51;&#x9875;&#x7F16;&#x8F91;&#x5668;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x754C;&#x9762;&#x652F;&#x6301; 6 &#x79CD;&#x4F9D;&#x8D56;&#x7C7B;&#x578B;&#x3002;</p>
+<ul>
+<li>&#x7CFB;&#x7EDF; JavaScript</li>
+<li>&#x7CFB;&#x7EDF; CSS</li>
+<li>&#x7528;&#x6237; JavaScript</li>
+<li>&#x7528;&#x6237; CSS</li>
+<li>Webpack Entry</li>
+<li>Webpack CSS</li>
+</ul>
+<p><code>&#x7CFB;&#x7EDF; JavaScript/CSS</code> &#x5C31;&#x662F;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x5185;&#x7F6E;&#x7684;&#x4F9D;&#x8D56;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x53F3;&#x4FA7;&#x70B9;&#x51FB;&#x6DFB;&#x52A0;&#x5373;&#x53EF;&#x3002;
+&#x5176;&#x5B83;&#x7684;&#x4F9D;&#x8D56;&#x7C7B;&#x578B;&#x5728;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5DE6;&#x4FA7;&#x6DFB;&#x52A0;&#xFF0C;&#x5176;&#x4E2D; <code>&#x7528;&#x6237; JavaScript/CSS</code> &#x586B;&#x5199;&#x94FE;&#x63A5;&#x5730;&#x5740;&#x5373;&#x53EF;&#x3002;Webpack &#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x5728;&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p><img src="https://s2.d2scdn.com/2017/10/26/fc550fca-e8a3-4fc3-a9db-2667b8e277c5/Jietu20171026-114619.png" alt=""></p>
+<h2 id="webpack-&#x4F9D;&#x8D56;"><a name="webpack-&#x4F9D;&#x8D56;" class="plugin-anchor" href="#webpack-&#x4F9D;&#x8D56;"><i class="fa fa-link" aria-hidden="true"></i></a>Webpack &#x4F9D;&#x8D56;</h2>
+<p>Webpack &#x4F9D;&#x8D56;&#x5206;&#x4E3A; <code>Webpack Entry</code> &#x548C; <code>Webpack CSS</code></p>
+<p>&#x76EE;&#x524D;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD; <code>Webpack Entry</code> &#x4F9D;&#x8D56;:</p>
+<ul>
+<li>dcompany: &#x4E00;&#x4E9B;&#x62C5;&#x8DEF;&#x7F51;&#x5185;&#x7F6E;&#x7684;&#x7EC4;&#x4EF6;&#x548C;&#x670D;&#x52A1;</li>
+<li>package_mintui: <a href="https://mint-ui.github.io/" target="_blank">https://mint-ui.github.io/</a></li>
+<li>package_elementui: <a href="http://element.eleme.io/2.0/#/zh-CN/component/changelog" target="_blank">http://element.eleme.io/2.0/#/zh-CN/component/changelog</a></li>
+</ul>
+<p>&#x4E0A;&#x8BC9;&#x90E8;&#x5206; <code>Webpack Entry</code> &#x8FD8;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x5BF9;&#x5E94;&#x7684; <code>Webpack CSS</code>:</p>
+<ul>
+<li>package_mintui</li>
+<li>package_elementui</li>
+</ul>
+<p>&#x6DFB;&#x52A0; <code>Webpack Entry</code> &#x4F9D;&#x8D56;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x4F9D;&#x8D56;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x901A;&#x7528; API</span>
+app.getEntry(name)
+
+<span class="hljs-comment">// &#x793A;&#x4F8B;1: package_elementui</span>
+<span class="hljs-keyword">const</span> eui = app.getEntry(<span class="hljs-string">&apos;package_elementui&apos;</span>)
+app.Vue.use(eui)
+</code></pre>
+<h3 id="&#x793A;&#x4F8B;&#x4E00;&#xFF1A;&#x6DFB;&#x52A0;-packageelementui"><a name="&#x793A;&#x4F8B;&#x4E00;&#xFF1A;&#x6DFB;&#x52A0;-packageelementui" class="plugin-anchor" href="#&#x793A;&#x4F8B;&#x4E00;&#xFF1A;&#x6DFB;&#x52A0;-packageelementui"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;&#x4E00;&#xFF1A;&#x6DFB;&#x52A0; package_elementui</h3>
+<p><img src="https://s2.d2scdn.com/2017/10/26/d539bbc9-df87-4a6f-a80f-6f03699a80bb/Jietu20171026-115249.png" alt=""></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> ElementUI = app.getEntry(<span class="hljs-string">&apos;package_elementui&apos;</span>)
+app.Vue.use(ElementUI)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data () {
+    <span class="hljs-keyword">return</span> {}
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="router.html" class="navigation navigation-prev " aria-label="Previous page: 路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="framework.html" class="navigation navigation-next " aria-label="Next page: 第三方框架支持">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"应用依赖管理","level":"1.4.6","depth":2,"next":{"title":"第三方框架支持","level":"1.4.7","depth":2,"path":"docs/fe/framework.md","ref":"docs/fe/framework.md","articles":[]},"previous":{"title":"路由","level":"1.4.5","depth":2,"path":"docs/fe/router.md","ref":"docs/fe/router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["todo","toc","anchors"],"pluginsConfig":{"todo":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/fe/deps.md","mtime":"2017-11-03T14:30:21.382Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-16T07:36:13.868Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
