@@ -61,3 +61,10 @@ export default {
 ### 自定义选项修改之后触发事件
 
 事件名 `css_ctx:changed`
+
+## 详细 API
+
+https://nodejs.org/api/events.html
+
+
+
