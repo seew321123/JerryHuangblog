@@ -21,6 +21,7 @@
   "homepage": "https://github.com/phyng/papp-doc#readme",
   "dependencies": {
     "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-collapsible-menu": "^1.0.2",
     "gitbook-plugin-toc": "^0.0.2",
     "gitbook-plugin-todo": "^0.1.3"
   }

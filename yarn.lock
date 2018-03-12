@@ -182,6 +182,10 @@ gitbook-plugin-anchors@^0.7.1:
     cheerio "*"
     github-slugid "1.0.1"
 
+gitbook-plugin-collapsible-menu@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/gitbook-plugin-collapsible-menu/download/gitbook-plugin-collapsible-menu-1.0.2.tgz#262ae5b0af3f42389751ee04db887de3b9e9b1c0"
+
 gitbook-plugin-toc@^0.0.2:
   version "0.0.2"
   resolved "http://registry.npm.taobao.org/gitbook-plugin-toc/download/gitbook-plugin-toc-0.0.2.tgz#75a848807e9bf238b4c430ae0c90245e5e35828e"
