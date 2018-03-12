@@ -134,7 +134,7 @@ async onShow () {
 | dw.pageEvent   | 页面级事件管理器  |
 | dw.globalEvent | 小程序级事件管理器 |
 
-和存储类似，事件管理器分为三级，具体使用方法参考应用的[事件管理器](/docs/docs/fe/event.html) 
+和存储类似，事件管理器分为三级，具体使用方法参考应用的[事件管理器](/docs/docs/fe/event.html)
 
 注意事项
 
@@ -200,6 +200,62 @@ export default {
 }
 
 // 输出结果: { "key1": 2, "obj": { "key2": 4 } }
+```
+
+
+示例：http://www.demlution.com/store/admin/page.html#/build/dwapp/9464
+
+代码：
+
+```
+export default {
+  data: {
+    a: 1,
+    b: {
+      c: 2
+    },
+    d: [3],
+    e: [
+      {f: 4}
+    ],
+    g: [
+      {h: [5]}
+    ]
+  },
+  onShow () {
+    dw.setData('a', 'success')
+    dw.setData('b.c', 'success')
+    dw.setData('d[0]', 'success')
+    dw.setData('e[0].f', 'success')
+    dw.setData('g[0].h[0]', 'success')
+  }
+}
+```
+
+渲染结果：
+
+```
+{
+  "a": "success",
+  "b": {
+    "c": "success"
+  },
+  "d": [
+    "success"
+  ],
+  "e": [
+    {
+      "f": "success"
+    }
+  ],
+  "g": [
+    {
+      "h": [
+        "success"
+      ]
+    }
+  ]
+}
 ```
 
 ### `dw.setDatas(obj)` 支持批量更新数据
@@ -299,4 +355,3 @@ if (dw.app.wxLogin()) {
   dw.setData('siteuser', response.data.profile)
 }
 ```
-
